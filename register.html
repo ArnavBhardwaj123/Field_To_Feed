@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEID - Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card animated-card">
+            <div class="logo animated-logo" style="text-align:center; margin-bottom:1rem;">FEID</div>
+            <h2>Create Your Account</h2>
+            <form id="standaloneRegisterForm" autocomplete="off">
+                <div id="registerError" class="form-error" style="display:none;"></div>
+                <div class="input-icon"><i class="fas fa-user"></i><input type="text" placeholder="Full Name" name="name" required></div>
+                <div class="input-icon"><i class="fas fa-envelope"></i><input type="email" placeholder="Email" name="email" required></div>
+                <div class="input-icon password-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password" required id="registerPassword">
+                    <span class="toggle-password" tabindex="0"><i class="fas fa-eye"></i></span>
+                </div>
+                <div class="input-icon"><i class="fas fa-phone"></i><input type="tel" placeholder="Phone Number" name="phone" required></div>
+                <button type="submit" class="btn btn-secondary" style="width:100%;"><span class="btn-text">Register</span><span class="btn-spinner" style="display:none;"></span></button>
+            </form>
+            <div class="auth-link">Already have an account? <a href="login.html">Login</a></div>
+        </div>
+    </div>
+    <script>
+    // Animate logo and card
+    window.onload = function() {
+        document.querySelector('.animated-logo').classList.add('logo-pop');
+        document.querySelector('.animated-card').classList.add('card-fadein');
+    };
+    // Password toggle
+    document.querySelector('.toggle-password').onclick = function() {
+        const pwd = document.getElementById('registerPassword');
+        if (pwd.type === 'password') {
+            pwd.type = 'text';
+            this.innerHTML = '<i class="fas fa-eye-slash"></i>';
+        } else {
+            pwd.type = 'password';
+            this.innerHTML = '<i class="fas fa-eye"></i>';
+        }
+    };
+    // Validation and feedback
+    const registerForm = document.getElementById('standaloneRegisterForm');
+    const registerError = document.getElementById('registerError');
+    registerForm.onsubmit = function(e) {
+        e.preventDefault();
+        registerError.style.display = 'none';
+        const name = registerForm.name.value.trim();
+        const email = registerForm.email.value.trim();
+        const password = registerForm.password.value;
+        const phone = registerForm.phone.value.trim();
+        if (!name || !email || !password || !phone) {
+            registerError.innerText = 'Please fill in all fields.';
+            registerError.style.display = 'block';
+            return;
+        }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+            registerError.innerText = 'Please enter a valid email address.';
+            registerError.style.display = 'block';
+            return;
+        }
+        if (password.length < 6) {
+            registerError.innerText = 'Password must be at least 6 characters.';
+            registerError.style.display = 'block';
+            return;
+        }
+        if (!/^\d{10,}$/.test(phone.replace(/\D/g, ''))) {
+            registerError.innerText = 'Please enter a valid phone number.';
+            registerError.style.display = 'block';
+            return;
+        }
+        // Simulate loading
+        const btn = registerForm.querySelector('button');
+        btn.disabled = true;
+        btn.querySelector('.btn-text').style.display = 'none';
+        btn.querySelector('.btn-spinner').style.display = 'inline-block';
+        btn.querySelector('.btn-spinner').innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+        setTimeout(() => {
+            btn.disabled = false;
+            btn.querySelector('.btn-text').style.display = '';
+            btn.querySelector('.btn-spinner').style.display = 'none';
+            let msg = document.createElement('div');
+            msg.className = 'form-success';
+            msg.innerText = 'Registration successful! Redirecting...';
+            registerForm.parentElement.appendChild(msg);
+            setTimeout(() => {
+                msg.remove();
+                registerForm.reset();
+                window.location.href = 'farmer.html';
+            }, 1200);
+        }, 1200);
+    };
+    </script>
+</body>
+</html> 
