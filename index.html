@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEID - Sustainable Animal Feed Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo animated-logo">FEID</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cta-buttons">
+            <button class="btn btn-primary"><a href="farmer.html">For Farmers</a></button>
+            <button class="btn btn-secondary"><a href="customer.html">For Customers</a></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero enhanced-hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-content animated-card">
+            <h1>Transforming Crop Residues into Premium Animal Feed</h1>
+            <p>Empowering sustainable farming while reducing waste and enhancing livestock productivity</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Sell Your Residues</button>
+                <button class="btn btn-secondary" id="learnMoreBtn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="about" class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p style="font-size:1.15rem; max-width:800px; margin:0 auto 2rem; text-align:center;">
+                At FEID, we believe in a future where no crop residue goes to waste. Every year, millions of tons of agricultural by-products are burned or discarded, harming the environment and missing out on their true value. Our mission is to transform this waste into opportunity—empowering farmers, nourishing livestock, and protecting our planet.
+            </p>
+            <div class="mission-story" style="max-width:900px; margin:0 auto 2.5rem; background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(44,62,80,0.06); padding:2rem;">
+                <h3 style="color:var(--primary-color); margin-bottom:1rem;">Why FEID?</h3>
+                <ul style="font-size:1.08rem; line-height:1.7;">
+                    <li><b>For Farmers:</b> Turn your crop residues into a new source of income. We offer free collection, fair market rates, and fast payments—helping you make the most of every harvest.</li>
+                    <li><b>For Livestock Owners:</b> Access premium, nutrient-rich feed made from recycled crop residues. Our products are lab-tested, sustainable, and proven to boost animal health and productivity.</li>
+                </ul>
+                <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;">
+                    <div style="flex:1; min-width:220px; text-align:center;">
+                        <div style="font-size:2.2rem; color:var(--primary-color); font-weight:bold;">10,000+</div>
+                        <div style="color:#555;">Tons of residue recycled</div>
+                    </div>
+                    <div style="flex:1; min-width:220px; text-align:center;">
+                        <div style="font-size:2.2rem; color:var(--primary-color); font-weight:bold;">2,500+</div>
+                        <div style="color:#555;">Farmers empowered</div>
+                    </div>
+                    <div style="flex:1; min-width:220px; text-align:center;">
+                        <div style="font-size:2.2rem; color:var(--primary-color); font-weight:bold;">15%</div>
+                        <div style="color:#555;">Increase in livestock yield</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-cards">
+                <div class="card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>We reduce agricultural waste and carbon emissions by recycling crop residues into valuable feed.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Productivity</h3>
+                    <p>Our feed solutions are scientifically formulated to enhance livestock health and farm profitability.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Cost-Effective</h3>
+                    <p>We create value for both farmers and customers, making sustainable agriculture accessible to all.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2.5rem;">
+                <a href="#services" class="btn btn-primary" style="margin-right:1rem;">See Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>For Farmers</h3>
+                    <ul>
+                        <li>Convert crop residues into income</li>
+                        <li>Free residue collection service</li>
+                        <li>Competitive market rates</li>
+                        <li>Regular payment system</li>
+                    </ul>
+                    <button class="btn btn-primary"><a href="farmer.html">Start Selling</a></button>
+                </div>
+                <div class="service-card">
+                    <h3>For Customers</h3>
+                    <ul>
+                        <li>Premium quality animal feed</li>
+                        <li>Nutrient-rich formulations</li>
+                        <li>Bulk and retail options</li>
+                        <li>Delivery services available</li>
+                    </ul>
+                    <button class="btn btn-secondary"><a href="customer.html">Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <select required>
+                        <option value="">Select Category</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="customer">Customer</option>
+                    </select>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FEID</h3>
+                    <p>Transforming agriculture through sustainable solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@feid.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FEID. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Animate logo and card
+    window.onload = function() {
+        document.querySelector('.animated-logo').classList.add('logo-pop');
+        document.querySelector('.animated-card').classList.add('card-fadein');
+    };
+    // Learn More button scroll
+    const learnMoreBtn = document.getElementById('learnMoreBtn');
+    if (learnMoreBtn) {
+        learnMoreBtn.onclick = function() {
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+                aboutSection.classList.add('highlighted');
+                setTimeout(() => aboutSection.classList.remove('highlighted'), 2000);
+            }
+        };
+    }
+    </script>
+</body>
+</html> 

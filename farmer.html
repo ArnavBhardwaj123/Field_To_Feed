@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEID - For Farmers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">FEID</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cta-buttons">
+            <button class="btn btn-primary" id="loginBtn"><a href="login.html">Login</a></button>
+            <button class="btn btn-secondary" id="registerBtn"><a href ="register.html">Register</a></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero enhanced-hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+            <h1>Turn Your Crop Residues into Income</h1>
+            <p>Join our sustainable farming initiative and earn from your agricultural waste</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="startSellingBtn">Start Selling Now</button>
+                <button class="btn btn-secondary" id="learnMoreBtn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="mission highlightable">
+        <div class="container">
+            <h2>Why Choose FEID?</h2>
+            <div class="mission-cards">
+                <div class="card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Free Collection</h3>
+                    <p>We pick up your crop residues directly from your farm</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Competitive Rates</h3>
+                    <p>Get the best market prices for your crop residues</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Payments</h3>
+                    <p>Receive payments within 48 hours of collection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="services">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Register Your Farm</h3>
+                    <p>Create an account and provide your farm details</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Schedule Collection</h3>
+                    <p>Choose a convenient time for residue collection</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>We Collect</h3>
+                    <p>Our team picks up the residues from your farm</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Get Paid</h3>
+                    <p>Receive payment directly to your account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Current Market Rates</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Wheat Straw</h3>
+                    <p class="price">₹2,000 - ₹2,500</p>
+                    <p class="per-unit">per ton</p>
+                    <ul>
+                        <li>Clean and dry</li>
+                        <li>Minimum 500 kg</li>
+                        <li>Free collection</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Rice Straw</h3>
+                    <p class="price">₹1,800 - ₹2,200</p>
+                    <p class="per-unit">per ton</p>
+                    <ul>
+                        <li>Clean and dry</li>
+                        <li>Minimum 500 kg</li>
+                        <li>Free collection</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Corn Stalks</h3>
+                    <p class="price">₹1,500 - ₹2,000</p>
+                    <p class="per-unit">per ton</p>
+                    <ul>
+                        <li>Clean and dry</li>
+                        <li>Minimum 500 kg</li>
+                        <li>Free collection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Farmers Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>"FEID made it so easy to sell my crop residues. The process was smooth and the payment was quick!"</p>
+                    <span>- Ramesh, Punjab</span>
+                </div>
+                <div class="testimonial">
+                    <p>"I never thought my farm waste could earn me extra income. Highly recommend FEID to all farmers!"</p>
+                    <span>- Sita, Haryana</span>
+                </div>
+                <div class="testimonial">
+                    <p>"The collection team was professional and the rates are the best in the market."</p>
+                    <span>- Manoj, UP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact highlightable">
+        <div class="container">
+            <h2>Get Started Today</h2>
+            <div class="contact-form">
+                <form id="farmerForm">
+                    <div class="input-icon"><i class="fas fa-user"></i><input type="text" placeholder="Full Name" required></div>
+                    <div class="input-icon"><i class="fas fa-envelope"></i><input type="email" placeholder="Email" required></div>
+                    <div class="input-icon"><i class="fas fa-phone"></i><input type="tel" placeholder="Phone Number" required></div>
+                    <div class="input-icon"><i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Farm Location" required></div>
+                    <div class="input-icon"><i class="fas fa-seedling"></i>
+                        <select required>
+                            <option value="">Select Crop Type</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="rice">Rice</option>
+                            <option value="corn">Corn</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-icon"><i class="fas fa-info-circle"></i><textarea placeholder="Additional Information" required></textarea></div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FEID</h3>
+                    <p>Transforming agriculture through sustainable solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: farmers@feid.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FEID. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-icon"><i class="fas fa-envelope"></i><input type="email" placeholder="Email" required></div>
+                <div class="input-icon"><i class="fas fa-lock"></i><input type="password" placeholder="Password" required></div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="input-icon"><i class="fas fa-user"></i><input type="text" placeholder="Full Name" required></div>
+                <div class="input-icon"><i class="fas fa-envelope"></i><input type="email" placeholder="Email" required></div>
+                <div class="input-icon"><i class="fas fa-lock"></i><input type="password" placeholder="Password" required></div>
+                <div class="input-icon"><i class="fas fa-phone"></i><input type="tel" placeholder="Phone Number" required></div>
+                <button type="submit" class="btn btn-secondary">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 

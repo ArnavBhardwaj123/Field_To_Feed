@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEID - For Customers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo animated-logo">FEID</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#ordering">Ordering</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cta-buttons">
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-secondary">Register</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero enhanced-hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-content animated-card">
+            <h1>Premium Quality Animal Feed</h1>
+            <p>Sustainably sourced, nutritionally balanced feed for your livestock</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Shop Now</button>
+                <button class="btn btn-secondary">View Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="services">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cattle Feed">
+                    <h3>Premium Cattle Feed</h3>
+                    <p>High-protein feed for dairy and beef cattle</p>
+                    <ul>
+                        <li>20% protein content</li>
+                        <li>Rich in minerals</li>
+                        <li>Available in 25kg bags</li>
+                    </ul>
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Poultry Feed">
+                    <h3>Poultry Feed</h3>
+                    <p>Balanced nutrition for layers and broilers</p>
+                    <ul>
+                        <li>18% protein content</li>
+                        <li>Essential vitamins</li>
+                        <li>Available in 20kg bags</li>
+                    </ul>
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Goat Feed">
+                    <h3>Goat Feed</h3>
+                    <p>Specialized feed for dairy and meat goats</p>
+                    <ul>
+                        <li>16% protein content</li>
+                        <li>Fiber-rich formula</li>
+                        <li>Available in 15kg bags</li>
+                    </ul>
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="mission">
+        <div class="container">
+            <h2>Why Choose Our Feed?</h2>
+            <div class="mission-cards">
+                <div class="card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainable</h3>
+                    <p>Made from recycled crop residues</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Quality Assured</h3>
+                    <p>Lab-tested for nutritional value</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Free delivery for bulk orders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ordering Section -->
+    <section id="ordering" class="services">
+        <div class="container">
+            <h2>How to Order</h2>
+            <div class="ordering-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Account</h3>
+                    <p>Register as a customer</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Browse Products</h3>
+                    <p>Select your required feed</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Place Order</h3>
+                    <p>Choose quantity and delivery</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Get Delivery</h3>
+                    <p>Receive at your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <div class="contact-form">
+                <form id="customerForm" autocomplete="off">
+                    <div id="customerError" class="form-error" style="display:none;"></div>
+                    <div class="input-icon"><i class="fas fa-user"></i><input type="text" placeholder="Full Name" name="name" required></div>
+                    <div class="input-icon"><i class="fas fa-envelope"></i><input type="email" placeholder="Email" name="email" required></div>
+                    <div class="input-icon"><i class="fas fa-phone"></i><input type="tel" placeholder="Phone Number" name="phone" required></div>
+                    <div class="input-icon"><i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Delivery Address" name="address" required></div>
+                    <div class="input-icon"><i class="fas fa-box"></i>
+                        <select name="product" required>
+                            <option value="">Select Product</option>
+                            <option value="cattle">Premium Cattle Feed</option>
+                            <option value="poultry">Poultry Feed</option>
+                            <option value="goat">Goat Feed</option>
+                        </select>
+                    </div>
+                    <div class="input-icon"><i class="fas fa-weight-hanging"></i><input type="number" placeholder="Quantity (in kg)" name="quantity" required></div>
+                    <div class="input-icon"><i class="fas fa-info-circle"></i><textarea placeholder="Special Instructions" name="instructions" required></textarea></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;"><span class="btn-text">Place Order</span><span class="btn-spinner" style="display:none;"></span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FEID</h3>
+                    <p>Transforming agriculture through sustainable solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#ordering">Ordering</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: customers@feid.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FEID. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Animate logo and card
+    window.onload = function() {
+        document.querySelector('.animated-logo').classList.add('logo-pop');
+        document.querySelector('.animated-card').classList.add('card-fadein');
+    };
+    // Validation and feedback for customer order form
+    const customerForm = document.getElementById('customerForm');
+    const customerError = document.getElementById('customerError');
+    if (customerForm) {
+        customerForm.onsubmit = function(e) {
+            e.preventDefault();
+            customerError.style.display = 'none';
+            const name = customerForm.name.value.trim();
+            const email = customerForm.email.value.trim();
+            const phone = customerForm.phone.value.trim();
+            const address = customerForm.address.value.trim();
+            const product = customerForm.product.value;
+            const quantity = customerForm.quantity.value.trim();
+            const instructions = customerForm.instructions.value.trim();
+            if (!name || !email || !phone || !address || !product || !quantity || !instructions) {
+                customerError.innerText = 'Please fill in all fields.';
+                customerError.style.display = 'block';
+                return;
+            }
+            if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+                customerError.innerText = 'Please enter a valid email address.';
+                customerError.style.display = 'block';
+                return;
+            }
+            if (!/^\d{10,}$/.test(phone.replace(/\D/g, ''))) {
+                customerError.innerText = 'Please enter a valid phone number.';
+                customerError.style.display = 'block';
+                return;
+            }
+            if (parseInt(quantity) <= 0) {
+                customerError.innerText = 'Please enter a valid quantity.';
+                customerError.style.display = 'block';
+                return;
+            }
+            // Simulate loading
+            const btn = customerForm.querySelector('button');
+            btn.disabled = true;
+            btn.querySelector('.btn-text').style.display = 'none';
+            btn.querySelector('.btn-spinner').style.display = 'inline-block';
+            btn.querySelector('.btn-spinner').innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.querySelector('.btn-text').style.display = '';
+                btn.querySelector('.btn-spinner').style.display = 'none';
+                let msg = document.createElement('div');
+                msg.className = 'form-success';
+                msg.innerText = 'Thank you! Your order has been received.';
+                customerForm.parentElement.appendChild(msg);
+                setTimeout(() => {
+                    msg.remove();
+                    customerForm.reset();
+                }, 2000);
+            }, 1200);
+        };
+    }
+    </script>
+</body>
+</html> 
