@@ -42,4 +42,45 @@
 ---
 
 ## 📂 Folder Structure
+Field_To_Feed/
+│
+├── static/
+│ ├── css/
+│ ├── js/
+│ └── images/
+│
+├── templates/
+│ ├── index.html
+│ ├── login.html
+│ ├── dashboard_farmer.html
+│ └── dashboard_consumer.html
+│
+├── db.sqlite3
+├── manage.py
+└── README.md
 
+
+---
+
+## 📌 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/Field_To_Feed.git
+   cd Field_To_Feed
+
+Create a virtual environment
+bash
+
+
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+Install dependencies
+
+
+
+pip install -r requirements.txt
+Run the server
+
+
+python manage.py runserver
