@@ -66,7 +66,7 @@ Field_To_Feed/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Field_To_Feed.git
+   git clone https://github.com/akshitvats026/Field_To_Feed.git
    cd Field_To_Feed
 
 Create a virtual environment
